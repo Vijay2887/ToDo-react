@@ -1,0 +1,47 @@
+.outer{
+    display: flex;
+    justify-content: center;
+}
+
+
+.text-field[type = "text"] {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-style: normal;
+    border-radius: 10px;
+    border: 2px solid gray;
+    padding: 10px 10px;
+}
+
+.container div{
+    display: flex;
+    align-items: center;
+}
+
+ol .text-field{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+    border: 2px solid rgba(168, 168, 168, 0.519);
+    width: 450px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    /* border: 2px solid; */
+    
+    
+}
+
+.submit-button{
+
+    border: none;
+    padding: 10px 10px ;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    color: white;
+    background-color: black;
+
+}
+
