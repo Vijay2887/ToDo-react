@@ -10,13 +10,17 @@ function ToDo() {
 
 
     function handleAddChore(event) {
-        setChores([...chores, value]);
+        setChores(c => [...c, value]);
         setValue("");
     }
 
     function handleChange(event) {
         setValue(event.target.value);
 
+    }
+
+    function handleRemove(index){
+        setChores(c => c.filter((_, i) => i != index));
     }
 
 
@@ -27,9 +31,12 @@ function ToDo() {
                     <input type="text" value={value} onChange={handleChange} className="text-field" />
                     <button onClick={handleAddChore} className="submit-button">Add</button>
                 </div>
+                <div className="message">*Tap to remove any completed chores</div>
                 <ol>
                     {
-                        chores.map((chore, index) => <li key={index} className="text-field">{chore}</li>)
+                        chores.map((chore, index) => <li key={index} className="text-field" onClick={() => {
+                            handleRemove(index);
+                        }}>{chore}</li>)
                     }
                 </ol>
             </div>
