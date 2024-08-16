@@ -1,5 +1,5 @@
 # ToDo-react
-# ToDo List React Component
+
 
 This repository contains a simple React component for managing a to-do list. It allows users to add chores to a list and displays them in an ordered list. The component provides basic functionality for adding items to the list.
 
